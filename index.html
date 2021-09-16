@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<section class="grid-container">
-    <header>
-<h1 id="Hem-Rubrik">Karins receptbank</h1>
-    </header>
+
 <nav class="menu-bar">
     <ul id="menu-bar-list">
         <li><a href="recept.html">Recept</a></li>
@@ -23,36 +20,52 @@
         <a href="registrering.html">Registrera dig</a>
     </div>
 </nav>
+
+<header>
+    <h1 id="Hem-Rubrik">Karins receptbank</h1>
+</header>
+
+    <main class="main">
     <p>
         <a>
-            <img src="img/food.jpg" id="home-picture" alt="" class="center-text">
+            <img src="img/food.jpg" id="home-picture" alt="" class="home-page-image">
         </a>
     </p>
-    <p id="veckans tips">
-        Veckans tips!
-    </p>
+    <section class="grid-container">
+
+    <p id="veckans-tips">Veckans tips!</p>
     <div class="row">
 
         <article class="column">
-        <img src="img/Carne-Asada-Tacos-3.jpg" alt="" class="carne-asada-pic"/>
-            <div class="carne-asada-recipe center-text">
-                <a href="">Carne asada Tacos</a>
+        <img src="img/Carne-Asada-Tacos-3.jpg" alt="" class="carne-asada-pic start_img"/>
+            <div>
+                <a id="carne-recipe" href="carne-asada-tacos.html">Carne Asada Tacos</a>
             </div>
         </article>
 
         <article class="column">
-           <img src="img/Lasagne-al-forno.jpg" alt="" class="lasagne-al-forno-pic">
+           <img src="img/Lasagne-al-forno.jpg" alt="" class="lasagne-al-forno-pic start_img">
+            <div>
+                <a id="lasagne-recipe" href="index.html">Lasagne al Forno</a>
+            </div>
         </article>
 
         <article class="column">
-           <img src="img/bangla%20fish%20curry.jpg" alt="" class="fish-curry-pic">
+           <img src="img/bangla%20fish%20curry.jpg" alt="" class="fish-curry-pic start_img">
+            <div>
+                <a id="fish-curry-recipe" href="index.html">Fish Curry</a>
+            </div>
         </article>
 
         <article class="column">
-         <img src="img/japchae.jpg" alt="" class="japchae-pic">
+         <img src="img/japchae.jpg" alt="" class="japchae-pic start_img">
+            <div>
+                <a id="japchae-recipe" href="index.html">Japchae</a>
+            </div>
         </article>
 
     </div>
 </section>
+    </main>
 </body>
 </html>

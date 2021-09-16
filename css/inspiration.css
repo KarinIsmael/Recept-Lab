@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=DM+Sans:wght@500&display=swap');
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#Inspiration-rubrik{
+    color: black;
+    font-family: 'Arbutus Slab', serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+.smoothie-bowl-pic{
+    max-width: 100%;
+    height: auto;
+    border: solid black;
+}
+
+/*.smoothie-bowl-pic{
+    align-content: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    border: solid black;
+}*/
+a:hover #registreringslänk{
+    color: black;
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: beige;
+    }
+
+    .smoothie-bowl-pic{
+        width: auto;
+        max-height: 40%;
+        border: solid black;
+    }
+}

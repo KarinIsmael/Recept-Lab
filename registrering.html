@@ -7,22 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div>
-    <p>
-        Vill du få tips på härliga recept för veckans måltider?
 
-    </p>
-    <p id="registrering">Registrera då dig här!</p>
-    <p>Du får varje söndag ett mejl med massa härlig inspiration för veckans måltider.</p>
-</div>
 <div>
+    <h1>
+        Vill du få tips på härliga recept för veckans måltider?
+    </h1>
+
+    <h2 id="registrering">Registrera då dig här!</h2>
+    <p>Du får varje söndag ett mejl med massa härlig inspiration för veckans måltider.</p>
+
+    <form method="post" action="">
+
+        <label for="epost">Skriv in e-postadress: </label>
+        <input type="text" id="epost">
+        <div id="validering"></div>
+        <input type="submit" value="Registrera">
+    </form>
+</div>
+
+<div id="användare"></div>
+
+<!--<div>
     <form action="index.html" method="GET">
         <input type="text" name="E-post" placeholder="E-post">
         <button type="submit" id="registrering-knapp">Registrera dig!</button>
     </form>
-</div>
+</div>-->
+
 <div>
     <a href="index.html">Tillbaka till första sidan</a>
 </div>
+<script src="js/registrering.js"></script>
 </body>
 </html>
