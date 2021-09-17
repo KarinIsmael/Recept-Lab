@@ -3,27 +3,18 @@
 body{
     background-color: #f2f2f2;
     font-family: 'DM Sans', sans-serif;
+    background-image: url("../img/food.jpg");
+    background-blend-mode: screen;
 }
 
 #Hem-Rubrik{
     color: black;
     font-family: 'Arbutus Slab', serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 
-/*section{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto 200px;
-    grid-template-areas:
-    "header"
-    "navigation"
-    "main-content"
-    "footer";
-    grid-gap: 1px;
-}*/
 a{
     color: black;
 }
@@ -51,13 +42,6 @@ div a:hover{
     border: 3px solid black;
 }
 
-/*#home-picture{
-    height: auto;
-    width: auto;
-    display: grid;
-    border: 5px solid black; !*lägger ej på border-?*!
-}*/
-
 .home-page-image{
     display: flex;
     margin-right: auto;
@@ -68,10 +52,12 @@ div a:hover{
 }
 #veckans-tips{
     text-align: center;
+    font-size: 25px;
+    background-color: white;
 }
 
 .start_img{
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -81,37 +67,17 @@ div a:hover{
     margin-right: auto;
     overflow: hidden;
 }
-/*.carne-asada-pic{
-    height: 150px;
-    width: 150px;
-    overflow: hidden;
-    margin: 20px;
-}*/
-.carne-asada-pic img{
-    max-width: 100%;
-    max-height: 100%;
-}
 #carne-recipe{
     margin-left: 150px;
 }
-/*.carne-asada-recipe{
-    text-align: center;
-    padding-right: 140px;
-    padding-bottom: 30px;
-    padding-top: 1px;
-}*/
+
 .lasagne-al-forno-pic{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-   /* height: 150px;
-    width: 150px;*/
     overflow: hidden;
 }
-.lasagne-al-forno-pic img{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 #lasagne-recipe{
     margin-left: 160px;
 }
@@ -119,15 +85,9 @@ div a:hover{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-   /* height: 150px;
-    width: 150px;*/
     overflow: hidden;
 }
 
-.fish-curry-pic img{
-    max-width: 100%;
-    max-height: 100%;
-}
 #fish-curry-recipe{
     margin-left: 180px;
 }
@@ -135,13 +95,7 @@ div a:hover{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    /*height: 150px;
-    width: 150px;*/
     overflow: hidden;
-}
-.japchae-pic img{
-    max-width: 100%;
-    max-height: 100%;
 }
 #japchae-recipe{
     margin-left: 180px;
@@ -151,13 +105,45 @@ div a:hover{
     padding: 5px;
     align-content: center;
     border: 8px solid black;
+    background-color: mintcream;
 }
 .row{
     flex: 8px;
     align-content: center;
+    border: 8px solid black;
 }
 .home-page-image{
     text-align: center;
+}
+
+.maintxt{
+    background-color: beige;
+    padding-top: 5px;
+    border: solid bisque;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 50px;
+    grid-gap: 20px;
+}
+.main-grid-pic{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: solid black;
+}
+
+.footer{
+    margin-top: 0px;
+}
+.insta-pic{
+    max-width: 20px;
+    height: auto;
 }
 
 
@@ -170,16 +156,21 @@ div a:hover{
 
     #Hem-Rubrik{
         text-align: center;
+        margin-top: 80px;
+    }
+    .home-page-image{
+        width: 80%;
     }
 
-   /* .center-text{
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
-        width: auto;
-    }*/
-    nav.menu-bar {
+
+    nav.menu-bar{
         text-align: center;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: white;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     nav.menu-bar ul li{
         display: inline;
@@ -194,6 +185,10 @@ div a:hover{
     }
     li a:hover{
         background-color: darkseagreen;
+    }
+    .start_img{
+        max-width: 80%;
+        height: auto;
     }
     #carne-recipe{
         margin-left: 20px;
@@ -223,6 +218,20 @@ div a:hover{
         flex: 33.33%;
         padding: 5px;
     }
+
+    .main-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-grid-pic{
+        max-width: 100%;
+        height: 200px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        overflow: hidden;
+        border: solid black;
+    }
 }
 
 /*desktop*/
@@ -232,7 +241,7 @@ div a:hover{
     }
 
     .grid-container{
-        width: 1000px;
+        width: 100%;
         margin: 10px auto;
     }
 
@@ -241,15 +250,8 @@ div a:hover{
         margin-top: 80px;
     }
     .home-page-image{
-        width: 50%;
-    }
-    /*.center-text{
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
         width: 80%;
-        height: 90%;
-    }*/
+    }
     nav.menu-bar{
         text-align: center;
         position: fixed;
@@ -277,65 +279,49 @@ div a:hover{
     .main{
         margin-top: 60px;
     }
-
-    .carne-asada-pic{
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        margin: 20px;
+    .start_img{
+        max-width: 80%;
+        height: auto;
     }
+
+
     .carne-asada-pic img{
         max-width: 100%;
         max-height: 100%;
     }
     #carne-recipe{
-        margin-left: 40px;
+        margin-left: 90px;
         margin-right: auto;
         width: auto;
     }
 
-    .lasagne-al-forno-pic{
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        margin: 20px;
-    }
+
     .lasagne-al-forno-pic img{
         max-width: 100%;
         max-height: 100%;
     }
     #lasagne-recipe{
-        margin-left: 50px;
+        margin-left: 90px;
         margin-right: auto;
         width: auto;
     }
-    .fish-curry-pic{
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        margin: 20px;
-    }
+
     .fish-curry-pic img{
         max-width: 100%;
         max-height: 100%;
     }
     #fish-curry-recipe{
-        margin-left: 80px;
+        margin-left: 110px;
         margin-right: auto;
         width: auto;
     }
-    .japchae-pic{
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        margin: 20px;
-    }
+
     .japchae-pic img{
         max-width: 100%;
         max-height: 100%;
     }
     #japchae-recipe{
-        margin-left: 80px;
+        margin-left: 140px;
         margin-right: auto;
         width: auto;
     }
@@ -345,5 +331,17 @@ div a:hover{
     .column{
         flex: 33.33%;
         padding: 5px;
+    }
+    .main-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-grid-pic{
+        max-width: 100%;
+        height: 200px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        border: solid black;
     }
 }

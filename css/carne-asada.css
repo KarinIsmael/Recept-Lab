@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=DM+Sans:wght@500&display=swap');
+
+body{
+    background-color: #f2f2f2;
+    background-image: url("../img/Carne-Asada-Tacos-main-3.jpg");
+    background-blend-mode: screen;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#carne-asada-rubrik{
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.carne-recipe-img{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.carne-grid-pic{
+}
+
+.carne-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 50px;
+    grid-gap: 20px;
+}
+
+#tillbaka{
+    color: black;
+}
+
+/*tablet*/
+@media screen and (min-width: 786px) and (max-width: 1024px){
+
+    body{
+        background-color: antiquewhite;
+    }
+    .carne-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .carne-recipe-img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 1025px){
+    body{
+        background-color: beige;
+    }
+
+    .carne-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .carne-recipe-img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+}
+
+
+

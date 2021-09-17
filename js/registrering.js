@@ -12,6 +12,6 @@ function checkEpost(){
 
 elEpost.addEventListener('blur', checkEpost, false);
 
-localstorageEpost = elEpost.value;
-localStorage.setItem('epost', localstorageEpost);
+let localstorageEpost = elEpost.value;
+localStorage.setItem('epost', "localstorageEpost");
 document.querySelector('#användare').innerHTML = localStorage.getItem('epost');

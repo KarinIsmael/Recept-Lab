@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=DM+Sans:wght@500&display=swap');
+.registrera-dig{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
 
 body{
     background-color: #f2f2f2;
     font-family: 'DM Sans', sans-serif;
+    background-image: url("../img/smoothie_bowl_green_2000x907.jpg");
+    background-blend-mode: screen;
+
 }
 
 #Inspiration-rubrik{
     color: black;
-    font-family: 'Arbutus Slab', serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+}
+
+.inspiration-video{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 50px;
+    grid-gap: 20px;
+}
+.youtube_responsive{
+    height: 300px;
+    width: 450px;
 }
 
 .smoothie-bowl-pic{
@@ -19,16 +39,79 @@ body{
     border: solid black;
 }
 
-/*.smoothie-bowl-pic{
-    align-content: center;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    border: solid black;
-}*/
-a:hover #registreringslänk{
+a{
     color: black;
+}
+ul li:hover > ul,
+
+li a:hover{
+    color: black;
+    background-color: darkseagreen;
+}
+div a:hover{
+    background-color: darkseagreen;
+}
+
+.varor{
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width: 786px) and (max-width: 1024px){
+
+    body{
+        background-color: antiquewhite;
+    }
+
+    nav.menu-bar{
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    nav.menu-bar ul li{
+        display: inline;
+    }
+
+    ul#menu-bar-list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li a{
+        padding: 14px 16px;
+    }
+    li a:hover{
+        background-color: darkseagreen;
+    }
+
+    #Inspiration-rubrik{
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .inspirations-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .smoothie-bowl-pic{
+        max-width: 100%;
+        height: auto;
+        border: solid black;
+
+    }
+    .varor{
+        margin-top: 10px;
+    }
+
+    .youtube_responsive{
+        height: 300px;
+        width: 600px;
+    }
 }
 
 /*Desktop*/
@@ -38,9 +121,53 @@ a:hover #registreringslänk{
         background-color: beige;
     }
 
+    nav.menu-bar{
+        text-align: center;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    nav.menu-bar ul li{
+        display: inline;
+    }
+
+    ul#menu-bar-list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li a{
+        padding: 14px 16px;
+    }
+    li a:hover{
+        background-color: darkseagreen;
+    }
+
+    #Inspiration-rubrik{
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .inspirations-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
     .smoothie-bowl-pic{
         width: auto;
-        max-height: 40%;
+        max-height: 100%;
         border: solid black;
     }
+    .varor{
+        margin-top: 10px;
+    }
+
+    .youtube_responsive{
+        height: 300px;
+        width: 600px;
+    }
+
 }

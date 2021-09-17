@@ -8,35 +8,63 @@
 </head>
 <body>
 
+<nav class="menu-bar">
+<ul id="menu-bar-list">
+    <li><a href="recept.html">Recept</a></li>
+    <li><a href="inspiration.html">Inspiration</a></li>
+    <li><a href="videoklipp.html">Videoklipp</a></li>
+    <li><a href="om-receptbanken.html">Om Receptbanken</a></li>
+    <!--<a href="#">Sök</a>-->
+</ul>
+<div class="registrera-dig">
+    <a href="registrering.html">Registrera dig</a>
+</div>
+</nav>
+
 <header>
     <h1 id="Inspiration-rubrik">Inspiration</h1>
 </header>
 
-<main>
+<main class="main">
 
-    <section class="inspirations-intro">
-    <article id="inspiration-intro-text">
-        Här hittar du ett axplock av alla våra goda recept i receptbanken.
-        Bläddra runt bland recepten och bli inspirerad!
-        <p></p>
+    <section class="inspirations-grid">
+
+    <article class="inspiration-intro-text">
+        <p>Här hittar du ett axplock av alla våra tips, samarbetspartners och goda recept i receptbanken.
+        Bläddra runt och bli inspirerad!
+        Håll utkik för erbjudanden från våra samarbetspartners, till exempel exklusiva rabattkuponger på matkassor,
+        specialimporterade råvaror och massa mer!
+        </p>
+        <p>
         Registrera dig gärna för att veckovis få inspirerande recept direkt i mejl-inkorgen.
         Planera veckans måltider och ät god mat med familjen! <a id="registreringslänk" href="registrering.html">Registrera dig</a>
+        </p>
+        <p>Under december kommer ett lotteri där du har chansen att vinna ett års förbrukning av
+        Linas matkasse!
+        Det enda du behöver göra är att kommentera nedan hur du tror att Linas matkasse kan förändra din vardag.
+        Vinnaren annonseras på hemsidan i mitten av december.</p>
     </article>
 
-        <p id="inspirations-bild">
+        <article class="inspirations-intro-bild">
         <img src="img/smoothie_bowl_green_2000x907.jpg" alt="" class="smoothie-bowl-pic">
-        </p>
-    </section>
-
-    <section class="inspirationsblock-1">
-
+        </article>
     </section>
 
     <section class="varor">
-        <h1>Basvaror att ha hemma</h1>
+        <h3>Basvaror att ha hemma</h3>
         <ul id="basvaror"></ul>
     </section>
 
+    <section class="inspiration-video-c">
+    <article class="inspiration-video">
+        <iframe class ="youtube_responsive" src="https://www.youtube.com/embed/tD9TWlvqN78"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </article>
+    </section>
+    <div>
+        <a href="index.html">Tillbaka till första sidan</a>
+    </div>
 </main>
 
 <script src="js/fetch-basvaror.js"></script>

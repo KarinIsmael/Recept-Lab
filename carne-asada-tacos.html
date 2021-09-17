@@ -3,25 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Carne Asada Tacos</title>
-    <link rel="stylesheet" type="text/css" href="css/inspiration.css">
+    <link rel="stylesheet" type="text/css" href="css/carne-asada.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
 <header>
     <h1 id="carne-asada-rubrik">Carne Asada Tacos</h1>
 </header>
 
-<main>
+<section class="carne-ingredienser">
+    <h1>Ingredienser</h1>
+    <ul id="carne-ingr"></ul>
+</section>
 
-    <section class="carne-ingredienser">
-        <h1>Ingredienser</h1>
-        <ul id="carne-ingr"></ul>
+<main>
+    <section class="carne-section">
+
+
+    <article class="carne-grid-recipe">
+        <h1>Recept</h1>
+        <p>Hacka Entrecote i små skivor. Marinera med valfria kryddor.
+            Hetta upp rikligt med olja i en panna. Stek köttstrimlorna i nån halv minut på vardera sida.
+            Bara så att de får lite färg.
+            Flytta till en tallrick och ställ åt sidan.</p>
+
+        <p>Hacka alla tillbehör: jalapenos, röd lök, koriander och lime. Lägg upp i små skålar och ställ åt sidan.</p>
+
+        <p>Värm upp majstortilla i en torr stekpanna så att de bubblar och får färg. Linda in stekta tortillabröd i en handduk.</p>
+
+        <p>Dressa tortilla med kött och lite av varje tillbehör. Ett viktigt tillebhör är salsa och salsa verde.
+        Det går bra att köpa färdigt men se gärna våra recept på grymt goda salsor <a href="index.html" class="carne-salsa-link">här</a>.</p>
+    </article>
+
+    <article class="carne-grid-pic">
+        <img src="img/Carne-Asada-Tacos-main-3.jpg" alt="" class="carne-recipe-img">
+    </article>
+
     </section>
 
-    <div>
-        <a href="index.html">Tillbaka till första sidan</a>
-    </div>
 </main>
+
+<footer>
+    <div>
+        <a id="tillbaka" href="index.html">Tillbaka till första sidan</a>
+    </div>
+</footer>
 <script src="js/fetch-carne-asada-ingredienser.js"></script>
 </body>
 </html>
